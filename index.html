@@ -23,7 +23,7 @@
     var geojsonLayer = L.geoJSON();
 
     // Fetch GeoJSON data (replace URL with your GeoJSON file)
-    fetch(map.json)
+    fetch(https://services1.arcgis.com/pMeXRvgWClLJZr3s/arcgis/rest/services/Frost_Campus_Floor_Plan/FeatureServer?f=pjson&token=3NKHt6i2urmWtqOuugvr9SDDOO6RWcnrvHnISZ5R2G97WwLD_7bthq6TcvqYZ6CIuMNZ_S9YfCAGXXZwPEvxJEXE5eUGkyH6Qwdfae3nsby7BfXUofAETxbHuzGTJ56sjO7ZKF2_yltISfQORVWTKoUYXaLbdMtfuSM9f6BDvEODpsnmnW0jv41MibtVVr9KDAJobdpbj6YewBRHXcsnFx7qeYtSHx80Z2sQV5rV4EObeSGC5vOetQIbqEdjMKQ4jFqWrGB6zWXHJi3yn8EUog..)
       .then(response => response.json())
       .then(data => {
         // Add GeoJSON data to the layer
